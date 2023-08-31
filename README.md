@@ -1,2 +1,2 @@
 # test-prices
-bcnc test
+BCNC - Inditex test prices
