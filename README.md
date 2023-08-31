@@ -1,4 +1,4 @@
-# test-prices
+# Test-Prices
 BCNC - Inditex Test Prices project with Spring Boot, Maven &amp; Java 11
 
 ## Technologies
