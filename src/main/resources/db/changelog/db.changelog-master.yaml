@@ -1,0 +1,5 @@
+databaseChangeLog:
+- include:
+    file: db/changelog/prices-ddl-v.0.0.1.yaml
+- include:
+    file: db/changelog/prices-dml-v.0.0.1.yaml

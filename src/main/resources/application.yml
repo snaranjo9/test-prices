@@ -1,1 +1,24 @@
-
+info:
+  Description: Test Inditex Prices project with Spring Boot, Maven and Java 11
+server:
+  port: 8080
+spring:
+  application:
+    name: prices
+  h2:
+    console:
+      enabled: true
+  datasource:
+    platform: h2
+    username: sa
+    password:
+    url: "jdbc:h2:mem:prices;DB_CLOSE_DELAY=-1"
+    driver-class-name: org.h2.Driver
+  liquibase:
+    enabled: true
+    change-log: classpath:/db/changelog/db.changelog-master.yaml
+    user: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
