@@ -3,7 +3,7 @@ package bcnc.inditex.prices.application.rest;
 import bcnc.inditex.prices.application.rest.converters.LocalDateTimeConverter;
 import bcnc.inditex.prices.application.rest.dto.PricesDto;
 import bcnc.inditex.prices.application.rest.mapper.PricesToPricesDtoMapper;
-import inditex.prices.domain.services.PricesService;
+import bcnc.inditex.prices.domain.services.PricesService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;

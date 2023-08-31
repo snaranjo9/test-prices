@@ -1,6 +1,6 @@
-package inditex.prices.domain.repositories;
+package bcnc.inditex.prices.domain.repositories;
 
-import inditex.prices.domain.model.Prices;
+import bcnc.inditex.prices.domain.model.Prices;
 
 import java.time.LocalDateTime;
 import java.util.List;
