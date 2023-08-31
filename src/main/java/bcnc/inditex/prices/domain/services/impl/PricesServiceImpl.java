@@ -1,8 +1,8 @@
-package inditex.prices.domain.services.impl;
+package bcnc.inditex.prices.domain.services.impl;
 
-import inditex.prices.domain.model.Prices;
-import inditex.prices.domain.repositories.PricesRepository;
-import inditex.prices.domain.services.PricesService;
+import bcnc.inditex.prices.domain.model.Prices;
+import bcnc.inditex.prices.domain.repositories.PricesRepository;
+import bcnc.inditex.prices.domain.services.PricesService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

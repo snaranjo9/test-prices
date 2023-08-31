@@ -1,6 +1,6 @@
-package inditex.prices.infrastructure.storage;
+package bcnc.inditex.prices.infrastructure.storage;
 
-import inditex.prices.infrastructure.storage.entities.PricesEntity;
+import bcnc.inditex.prices.infrastructure.storage.entities.PricesEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,7 +1,7 @@
-package inditex.prices.infrastructure.storage.mapper;
+package bcnc.inditex.prices.infrastructure.storage.mapper;
 
-import inditex.prices.domain.model.Prices;
-import inditex.prices.infrastructure.storage.entities.PricesEntity;
+import bcnc.inditex.prices.domain.model.Prices;
+import bcnc.inditex.prices.infrastructure.storage.entities.PricesEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.springframework.util.CollectionUtils;

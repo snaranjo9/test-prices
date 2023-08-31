@@ -1,7 +1,7 @@
 package bcnc.inditex.prices.application.rest.mapper;
 
 import bcnc.inditex.prices.application.rest.dto.PricesDto;
-import inditex.prices.domain.model.Prices;
+import bcnc.inditex.prices.domain.model.Prices;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.springframework.util.CollectionUtils;

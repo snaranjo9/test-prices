@@ -1,4 +1,4 @@
-package inditex.prices.domain.handler;
+package bcnc.inditex.prices.domain.handler;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.web.error.ErrorAttributeOptions;

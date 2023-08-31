@@ -1,4 +1,4 @@
-package inditex.prices.domain.model;
+package bcnc.inditex.prices.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

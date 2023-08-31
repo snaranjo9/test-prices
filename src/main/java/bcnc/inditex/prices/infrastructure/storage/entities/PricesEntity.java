@@ -1,4 +1,4 @@
-package inditex.prices.infrastructure.storage.entities;
+package bcnc.inditex.prices.infrastructure.storage.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

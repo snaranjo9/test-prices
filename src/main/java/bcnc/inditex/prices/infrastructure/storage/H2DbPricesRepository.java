@@ -1,8 +1,8 @@
-package inditex.prices.infrastructure.storage;
+package bcnc.inditex.prices.infrastructure.storage;
 
-import inditex.prices.domain.model.Prices;
-import inditex.prices.domain.repositories.PricesRepository;
-import inditex.prices.infrastructure.storage.mapper.PricesEntityToPricesMapper;
+import bcnc.inditex.prices.domain.model.Prices;
+import bcnc.inditex.prices.domain.repositories.PricesRepository;
+import bcnc.inditex.prices.infrastructure.storage.mapper.PricesEntityToPricesMapper;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
