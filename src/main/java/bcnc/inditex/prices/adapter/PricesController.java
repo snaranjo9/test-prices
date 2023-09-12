@@ -1,4 +1,4 @@
-package bcnc.inditex.prices.application.rest;
+package bcnc.inditex.prices.adapter;
 
 import bcnc.inditex.prices.application.rest.converters.LocalDateTimeConverter;
 import bcnc.inditex.prices.application.rest.dto.PricesDto;
@@ -23,7 +23,7 @@ public class PricesController {
     private final PricesToPricesDtoMapper pricesToPricesDtoMapper;
 
     @GetMapping(value = "/prices")
-    public ResponseEntity<List<PricesDto>> getPrices(@RequestParam(name = "applicationDate") String applicationDate,
+    public ResponseEntity<PricesDto> getPrices(@RequestParam(name = "applicationDate") String applicationDate,
                                                      @RequestParam(name = "productId") Integer productId,
                                                      @RequestParam(name = "brandId") Integer brandId) {
         log.info("PricesController - Get Prices by {} - {} - {}", applicationDate, productId, brandId);

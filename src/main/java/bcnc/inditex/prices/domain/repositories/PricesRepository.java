@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface PricesRepository {
 
-    List<Prices> getPrices(LocalDateTime applicationDate, Integer productId, Integer brandId);
+    Prices getPrices(LocalDateTime applicationDate, Integer productId, Integer brandId);
 
 }

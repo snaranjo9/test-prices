@@ -17,7 +17,7 @@ public class PricesServiceImpl implements PricesService {
 
     private final PricesRepository pricesRepository;
 
-    public List<Prices> getPrices(LocalDateTime applicationDate, Integer productId, Integer brandId) {
+    public Prices getPrices(LocalDateTime applicationDate, Integer productId, Integer brandId) {
         log.info("PricesServiceImpl - Get Prices by {} - {} - {}", applicationDate, productId, brandId);
         return pricesRepository.getPrices(applicationDate, productId, brandId);
     }

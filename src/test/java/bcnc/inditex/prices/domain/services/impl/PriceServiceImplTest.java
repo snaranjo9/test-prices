@@ -35,7 +35,7 @@ class PriceServiceImplTest {
     @Test
     void givenApplicationDateAndProductIdAndBrandId_whenFindByThoseFields_ThenReturnAListOfPrices(){
         // arrange
-        when(pricesRepository.getPrices(any(), any(), any())).thenReturn(Arrays.asList(Prices.builder()
+        when(pricesRepository.getPrices(any(), any(), any())).thenReturn(Prices.builder()
                 .id(UUID.fromString("c0acbd79-10bd-4e73-bf9b-82251e74dd4d"))
                 .brandId(1)
                 .startDate(DateTimeFormatter.ISO_LOCAL_DATE_TIME.parse("2020-06-14T00:00:00", LocalDateTime::from))
@@ -45,15 +45,14 @@ class PriceServiceImplTest {
                 .priority(0)
                 .price(35.5F)
                 .curr("EUR")
-                .build()));
+                .build());
 
         // act
-        List<Prices> pricesList = pricesService.getPrices(DateTimeFormatter.ISO_LOCAL_DATE_TIME.parse("2020-06-14T00:00:00", LocalDateTime::from), 35455, 1);
+        Prices prices = pricesService.getPrices(DateTimeFormatter.ISO_LOCAL_DATE_TIME.parse("2020-06-14T00:00:00", LocalDateTime::from), 35455, 1);
 
         // assert
         verify(pricesRepository).getPrices(DateTimeFormatter.ISO_LOCAL_DATE_TIME.parse("2020-06-14T00:00:00", LocalDateTime::from), 35455, 1);
-        assertFalse("PricesList should not be empty", CollectionUtils.isEmpty(pricesList));
-        assertEquals("PricesList size should be 1",  1, pricesList.size());
+        assertNotNull("Price should be not null", prices);
 
     }
 
